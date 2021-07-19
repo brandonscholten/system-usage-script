@@ -17,10 +17,9 @@ echo ===end of log $i=== >> log.txt
 date >> log.txt
 echo =================== >> log.txt
 echo system state logged!
-echo waiting...
 read -t $interval -p "waiting..."
 done
 echo finished logging :D
 echo log:
-sort baselog.txt
+sort log.txt
 exit 0
